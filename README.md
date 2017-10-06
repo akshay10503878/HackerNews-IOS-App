@@ -18,4 +18,7 @@ Technologies Used:
 
 -Screenshots
 
-![Alt text](/Screenshots/IntroductionScreen.png?raw=true  "IntroductionScreen")  -   ![Alt text](/Screenshots/LoginScreen.png?raw=true  "LoginScreen")  | ![Alt text](/Screenshots/MainScreen.png?raw=true  "MainScreen")  -   ![Alt text](/Screenshots/DetailScreen.png?raw=true  "DetailScreen")
+![Alt text](/Screenshots/IntroductionScreen.jpg?raw=true  "IntroductionScreen")  
+![Alt text](/Screenshots/LoginScreen.jpg?raw=true  "LoginScreen") 
+![Alt text](/Screenshots/MainScreen.jpg?raw=true  "MainScreen") 
+![Alt text](/Screenshots/DetailScreen.jpg?raw=true  "DetailScreen")
