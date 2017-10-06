@@ -1,0 +1,992 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		303102671F739391005505E7 /* HackerNewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 303102661F739391005505E7 /* HackerNewsCell.m */; };
+		3031026A1F739403005505E7 /* NewsDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 303102691F739403005505E7 /* NewsDownloader.m */; };
+		3031026F1F73AEFC005505E7 /* Story.m in Sources */ = {isa = PBXBuildFile; fileRef = 3031026E1F73AEFC005505E7 /* Story.m */; };
+		303102721F73AF29005505E7 /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = 303102711F73AF29005505E7 /* Comment.m */; };
+		3031027E1F73BCCE005505E7 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 3031027B1F73BCCE005505E7 /* Reachability.m */; };
+		3031027F1F73BCCE005505E7 /* ReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3031027D1F73BCCE005505E7 /* ReachabilityManager.m */; };
+		303102821F73BCD7005505E7 /* IAUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 303102811F73BCD7005505E7 /* IAUtils.m */; };
+		303102891F73F20B005505E7 /* libc++.1.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 303102881F73F20B005505E7 /* libc++.1.tbd */; };
+		30E5C2881F716E3500CF5632 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 30E5C2871F716E3500CF5632 /* GoogleService-Info.plist */; };
+		30E5C2981F71701100CF5632 /* CustomTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E5C28B1F71701100CF5632 /* CustomTextField.m */; };
+		30E5C29A1F71701100CF5632 /* LoginCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E5C28F1F71701100CF5632 /* LoginCell.m */; };
+		30E5C29B1F71701100CF5632 /* PageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E5C2911F71701100CF5632 /* PageCell.m */; };
+		30E5C29C1F71701100CF5632 /* PageInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E5C2931F71701100CF5632 /* PageInfo.m */; };
+		30E5C29D1F71701100CF5632 /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E5C2951F71701100CF5632 /* LoginController.m */; };
+		30E5C2A21F71702E00CF5632 /* NSUserDefaults+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E5C2A11F71702E00CF5632 /* NSUserDefaults+Helper.m */; };
+		30E5C2A51F71703A00CF5632 /* MainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E5C2A41F71703A00CF5632 /* MainNavigationController.m */; };
+		30ED79DE1F7532B100B509D4 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30ED79DD1F7532B100B509D4 /* DetailViewController.m */; };
+		30ED79E11F7532C300B509D4 /* CommentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30ED79E01F7532C300B509D4 /* CommentsViewController.m */; };
+		30ED79E41F7532D100B509D4 /* WebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30ED79E31F7532D100B509D4 /* WebViewViewController.m */; };
+		30ED79E71F7535DE00B509D4 /* CommentViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 30ED79E61F7535DE00B509D4 /* CommentViewCell.m */; };
+		30ED79EA1F757CF400B509D4 /* CommentsDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 30ED79E91F757CF400B509D4 /* CommentsDownloader.m */; };
+		30F7FC191F62F9BD0036D181 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F7FC181F62F9BD0036D181 /* main.m */; };
+		30F7FC1C1F62F9BD0036D181 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F7FC1B1F62F9BD0036D181 /* AppDelegate.m */; };
+		30F7FC1F1F62F9BD0036D181 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F7FC1E1F62F9BD0036D181 /* MainViewController.m */; };
+		30F7FC221F62F9BD0036D181 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30F7FC201F62F9BD0036D181 /* Main.storyboard */; };
+		30F7FC241F62F9BD0036D181 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30F7FC231F62F9BD0036D181 /* Assets.xcassets */; };
+		30F7FC271F62F9BD0036D181 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30F7FC251F62F9BD0036D181 /* LaunchScreen.storyboard */; };
+		30F7FC4B1F62F9D00036D181 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30F7FC4A1F62F9D00036D181 /* Realm.framework */; };
+		30F7FC4C1F62F9D00036D181 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 30F7FC4A1F62F9D00036D181 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		37CDE9FBB74D204DA2D363D7 /* libPods-HackerNewsUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 164E1C59B2AC05C65996C6AD /* libPods-HackerNewsUITests.a */; };
+		9F2731D58E18623F1E239554 /* libPods-HackerNewsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB374F76CDCCB4FD0A9FA942 /* libPods-HackerNewsTests.a */; };
+		E63B91B55D347D62477930A2 /* libPods-HackerNews.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BD59D0B385272BBC513019 /* libPods-HackerNews.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		30F7FC2E1F62F9BD0036D181 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30F7FC0C1F62F9BD0036D181 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30F7FC131F62F9BD0036D181;
+			remoteInfo = UrbanPiper;
+		};
+		30F7FC391F62F9BD0036D181 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30F7FC0C1F62F9BD0036D181 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30F7FC131F62F9BD0036D181;
+			remoteInfo = UrbanPiper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		30F7FC4D1F62F9D00036D181 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				30F7FC4C1F62F9D00036D181 /* Realm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		07E686BD139EC41A7148088A /* Pods-HackerNewsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackerNewsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackerNewsTests/Pods-HackerNewsTests.release.xcconfig"; sourceTree = "<group>"; };
+		0A23317312EC2E105F7997ED /* Pods-UrbanPiper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UrbanPiper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UrbanPiper/Pods-UrbanPiper.debug.xcconfig"; sourceTree = "<group>"; };
+		164E1C59B2AC05C65996C6AD /* libPods-HackerNewsUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HackerNewsUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		303102621F727B02005505E7 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		303102651F739391005505E7 /* HackerNewsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HackerNewsCell.h; sourceTree = "<group>"; };
+		303102661F739391005505E7 /* HackerNewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HackerNewsCell.m; sourceTree = "<group>"; };
+		303102681F739403005505E7 /* NewsDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsDownloader.h; sourceTree = "<group>"; };
+		303102691F739403005505E7 /* NewsDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsDownloader.m; sourceTree = "<group>"; };
+		3031026D1F73AEFC005505E7 /* Story.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Story.h; sourceTree = "<group>"; };
+		3031026E1F73AEFC005505E7 /* Story.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Story.m; sourceTree = "<group>"; };
+		303102701F73AF29005505E7 /* Comment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Comment.h; sourceTree = "<group>"; };
+		303102711F73AF29005505E7 /* Comment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Comment.m; sourceTree = "<group>"; };
+		3031027A1F73BCCD005505E7 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		3031027B1F73BCCE005505E7 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		3031027C1F73BCCE005505E7 /* ReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReachabilityManager.h; sourceTree = "<group>"; };
+		3031027D1F73BCCE005505E7 /* ReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReachabilityManager.m; sourceTree = "<group>"; };
+		303102801F73BCD7005505E7 /* IAUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAUtils.h; sourceTree = "<group>"; };
+		303102811F73BCD7005505E7 /* IAUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAUtils.m; sourceTree = "<group>"; };
+		303102881F73F20B005505E7 /* libc++.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.1.tbd"; path = "usr/lib/libc++.1.tbd"; sourceTree = SDKROOT; };
+		30E5C2871F716E3500CF5632 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		30E5C28A1F71701100CF5632 /* CustomTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTextField.h; sourceTree = "<group>"; };
+		30E5C28B1F71701100CF5632 /* CustomTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTextField.m; sourceTree = "<group>"; };
+		30E5C28E1F71701100CF5632 /* LoginCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginCell.h; sourceTree = "<group>"; };
+		30E5C28F1F71701100CF5632 /* LoginCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginCell.m; sourceTree = "<group>"; };
+		30E5C2901F71701100CF5632 /* PageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageCell.h; sourceTree = "<group>"; };
+		30E5C2911F71701100CF5632 /* PageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageCell.m; sourceTree = "<group>"; };
+		30E5C2921F71701100CF5632 /* PageInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageInfo.h; sourceTree = "<group>"; };
+		30E5C2931F71701100CF5632 /* PageInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageInfo.m; sourceTree = "<group>"; };
+		30E5C2941F71701100CF5632 /* LoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
+		30E5C2951F71701100CF5632 /* LoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
+		30E5C2A01F71702E00CF5632 /* NSUserDefaults+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+Helper.h"; sourceTree = "<group>"; };
+		30E5C2A11F71702E00CF5632 /* NSUserDefaults+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+Helper.m"; sourceTree = "<group>"; };
+		30E5C2A31F71703A00CF5632 /* MainNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainNavigationController.h; sourceTree = "<group>"; };
+		30E5C2A41F71703A00CF5632 /* MainNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainNavigationController.m; sourceTree = "<group>"; };
+		30ED79DC1F7532B100B509D4 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		30ED79DD1F7532B100B509D4 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		30ED79DF1F7532C300B509D4 /* CommentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentsViewController.h; sourceTree = "<group>"; };
+		30ED79E01F7532C300B509D4 /* CommentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentsViewController.m; sourceTree = "<group>"; };
+		30ED79E21F7532D100B509D4 /* WebViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewViewController.h; sourceTree = "<group>"; };
+		30ED79E31F7532D100B509D4 /* WebViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewViewController.m; sourceTree = "<group>"; };
+		30ED79E51F7535DE00B509D4 /* CommentViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentViewCell.h; sourceTree = "<group>"; };
+		30ED79E61F7535DE00B509D4 /* CommentViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentViewCell.m; sourceTree = "<group>"; };
+		30ED79E81F757CF400B509D4 /* CommentsDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentsDownloader.h; sourceTree = "<group>"; };
+		30ED79E91F757CF400B509D4 /* CommentsDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentsDownloader.m; sourceTree = "<group>"; };
+		30F7FC141F62F9BD0036D181 /* HackerNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackerNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		30F7FC181F62F9BD0036D181 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		30F7FC1A1F62F9BD0036D181 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		30F7FC1B1F62F9BD0036D181 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		30F7FC1D1F62F9BD0036D181 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		30F7FC1E1F62F9BD0036D181 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		30F7FC211F62F9BD0036D181 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		30F7FC231F62F9BD0036D181 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		30F7FC261F62F9BD0036D181 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		30F7FC281F62F9BD0036D181 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30F7FC2D1F62F9BD0036D181 /* HackerNewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackerNewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		30F7FC381F62F9BD0036D181 /* HackerNewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackerNewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		30F7FC4A1F62F9D00036D181 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		339221C3EBB3B522E2A09B7F /* Pods-HackerNewsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackerNewsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackerNewsUITests/Pods-HackerNewsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		410C2A09A6E7939B8E3573D4 /* Pods-HackerNewsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackerNewsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackerNewsUITests/Pods-HackerNewsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5F02187DB12276EC42B832FA /* Pods-HackerNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackerNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackerNews/Pods-HackerNews.release.xcconfig"; sourceTree = "<group>"; };
+		743BF0CAEE675546E14DF9C3 /* Pods-HackerNewsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackerNewsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackerNewsTests/Pods-HackerNewsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		78BF6EB7AA81596C2C984DC1 /* Pods-UrbanPiperTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UrbanPiperTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UrbanPiperTests/Pods-UrbanPiperTests.release.xcconfig"; sourceTree = "<group>"; };
+		7A054E46C2FDE5E6A6EE9835 /* Pods-UrbanPiperUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UrbanPiperUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UrbanPiperUITests/Pods-UrbanPiperUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		80FCABD478BE3D116AC12F0C /* Pods-UrbanPiperUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UrbanPiperUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UrbanPiperUITests/Pods-UrbanPiperUITests.release.xcconfig"; sourceTree = "<group>"; };
+		81BD59D0B385272BBC513019 /* libPods-HackerNews.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HackerNews.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9548881313FCDFC57A18C991 /* Pods-HackerNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackerNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackerNews/Pods-HackerNews.debug.xcconfig"; sourceTree = "<group>"; };
+		AB374F76CDCCB4FD0A9FA942 /* libPods-HackerNewsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HackerNewsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF9B57D09A1B0A30E3B571DF /* Pods-UrbanPiperTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UrbanPiperTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UrbanPiperTests/Pods-UrbanPiperTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D61CF6F521EA781AD9A8B0B1 /* Pods-UrbanPiper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UrbanPiper.release.xcconfig"; path = "Pods/Target Support Files/Pods-UrbanPiper/Pods-UrbanPiper.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		30F7FC111F62F9BD0036D181 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				303102891F73F20B005505E7 /* libc++.1.tbd in Frameworks */,
+				30F7FC4B1F62F9D00036D181 /* Realm.framework in Frameworks */,
+				E63B91B55D347D62477930A2 /* libPods-HackerNews.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30F7FC2A1F62F9BD0036D181 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F2731D58E18623F1E239554 /* libPods-HackerNewsTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30F7FC351F62F9BD0036D181 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37CDE9FBB74D204DA2D363D7 /* libPods-HackerNewsUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07893310199655EC8428BA59 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				303102881F73F20B005505E7 /* libc++.1.tbd */,
+				81BD59D0B385272BBC513019 /* libPods-HackerNews.a */,
+				AB374F76CDCCB4FD0A9FA942 /* libPods-HackerNewsTests.a */,
+				164E1C59B2AC05C65996C6AD /* libPods-HackerNewsUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3031025A1F7170B1005505E7 /* MainNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				30E5C2A31F71703A00CF5632 /* MainNavigationController.h */,
+				30E5C2A41F71703A00CF5632 /* MainNavigationController.m */,
+			);
+			name = MainNavigationController;
+			path = MainNavigationController;
+			sourceTree = "<group>";
+		};
+		3031025B1F7170C8005505E7 /* HomeController */ = {
+			isa = PBXGroup;
+			children = (
+				303102641F728A2B005505E7 /* HackerNewsCell */,
+				30F7FC1D1F62F9BD0036D181 /* MainViewController.h */,
+				30F7FC1E1F62F9BD0036D181 /* MainViewController.m */,
+			);
+			name = HomeController;
+			path = HomeController;
+			sourceTree = "<group>";
+		};
+		303102631F728254005505E7 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				30F7FC1A1F62F9BD0036D181 /* AppDelegate.h */,
+				30F7FC1B1F62F9BD0036D181 /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		303102641F728A2B005505E7 /* HackerNewsCell */ = {
+			isa = PBXGroup;
+			children = (
+				303102651F739391005505E7 /* HackerNewsCell.h */,
+				303102661F739391005505E7 /* HackerNewsCell.m */,
+			);
+			name = HackerNewsCell;
+			path = HackerNewsCell;
+			sourceTree = "<group>";
+		};
+		3031026B1F739418005505E7 /* APIHandling */ = {
+			isa = PBXGroup;
+			children = (
+				30ED79E81F757CF400B509D4 /* CommentsDownloader.h */,
+				30ED79E91F757CF400B509D4 /* CommentsDownloader.m */,
+				303102681F739403005505E7 /* NewsDownloader.h */,
+				303102691F739403005505E7 /* NewsDownloader.m */,
+			);
+			name = APIHandling;
+			path = APIHandling;
+			sourceTree = "<group>";
+		};
+		3031026C1F73AECA005505E7 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				303102701F73AF29005505E7 /* Comment.h */,
+				303102711F73AF29005505E7 /* Comment.m */,
+				3031026D1F73AEFC005505E7 /* Story.h */,
+				3031026E1F73AEFC005505E7 /* Story.m */,
+			);
+			name = DataModel;
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		303102831F73BCE1005505E7 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				303102801F73BCD7005505E7 /* IAUtils.h */,
+				303102811F73BCD7005505E7 /* IAUtils.m */,
+			);
+			name = Utils;
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		303102841F73BCF3005505E7 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				3031027A1F73BCCD005505E7 /* Reachability.h */,
+				3031027B1F73BCCE005505E7 /* Reachability.m */,
+				3031027C1F73BCCE005505E7 /* ReachabilityManager.h */,
+				3031027D1F73BCCE005505E7 /* ReachabilityManager.m */,
+			);
+			name = Reachability;
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		30E5C2891F71700400CF5632 /* LoginController */ = {
+			isa = PBXGroup;
+			children = (
+				30E5C28A1F71701100CF5632 /* CustomTextField.h */,
+				30E5C28B1F71701100CF5632 /* CustomTextField.m */,
+				30E5C28E1F71701100CF5632 /* LoginCell.h */,
+				30E5C28F1F71701100CF5632 /* LoginCell.m */,
+				30E5C2941F71701100CF5632 /* LoginController.h */,
+				30E5C2951F71701100CF5632 /* LoginController.m */,
+				30E5C2901F71701100CF5632 /* PageCell.h */,
+				30E5C2911F71701100CF5632 /* PageCell.m */,
+				30E5C2921F71701100CF5632 /* PageInfo.h */,
+				30E5C2931F71701100CF5632 /* PageInfo.m */,
+			);
+			name = LoginController;
+			path = LoginController;
+			sourceTree = "<group>";
+		};
+		30E5C29F1F71701F00CF5632 /* NSUserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				30E5C2A01F71702E00CF5632 /* NSUserDefaults+Helper.h */,
+				30E5C2A11F71702E00CF5632 /* NSUserDefaults+Helper.m */,
+			);
+			name = NSUserDefaults;
+			path = NSUserDefaults;
+			sourceTree = "<group>";
+		};
+		30ED79DB1F75329800B509D4 /* DetailViewConrrollers */ = {
+			isa = PBXGroup;
+			children = (
+				30ED79EB1F7583F300B509D4 /* CommentViewController */,
+				30ED79EC1F75840700B509D4 /* WebViewViewController */,
+				30ED79DC1F7532B100B509D4 /* DetailViewController.h */,
+				30ED79DD1F7532B100B509D4 /* DetailViewController.m */,
+			);
+			name = DetailViewConrrollers;
+			path = DetailViewConrrollers;
+			sourceTree = "<group>";
+		};
+		30ED79EB1F7583F300B509D4 /* CommentViewController */ = {
+			isa = PBXGroup;
+			children = (
+				30ED79E51F7535DE00B509D4 /* CommentViewCell.h */,
+				30ED79E61F7535DE00B509D4 /* CommentViewCell.m */,
+				30ED79DF1F7532C300B509D4 /* CommentsViewController.h */,
+				30ED79E01F7532C300B509D4 /* CommentsViewController.m */,
+			);
+			name = CommentViewController;
+			path = CommentViewController;
+			sourceTree = "<group>";
+		};
+		30ED79EC1F75840700B509D4 /* WebViewViewController */ = {
+			isa = PBXGroup;
+			children = (
+				30ED79E21F7532D100B509D4 /* WebViewViewController.h */,
+				30ED79E31F7532D100B509D4 /* WebViewViewController.m */,
+			);
+			name = WebViewViewController;
+			path = WebViewViewController;
+			sourceTree = "<group>";
+		};
+		30F7FC0B1F62F9BD0036D181 = {
+			isa = PBXGroup;
+			children = (
+				07893310199655EC8428BA59 /* Frameworks */,
+				30F7FC161F62F9BD0036D181 /* HackerNews */,
+				BD343322A7AB659F1BFFAEAB /* Pods */,
+				30F7FC151F62F9BD0036D181 /* Products */,
+				30F7FC4A1F62F9D00036D181 /* Realm.framework */,
+			);
+			sourceTree = "<group>";
+		};
+		30F7FC151F62F9BD0036D181 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				30F7FC141F62F9BD0036D181 /* HackerNews.app */,
+				30F7FC2D1F62F9BD0036D181 /* HackerNewsTests.xctest */,
+				30F7FC381F62F9BD0036D181 /* HackerNewsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		30F7FC161F62F9BD0036D181 /* HackerNews */ = {
+			isa = PBXGroup;
+			children = (
+				3031026B1F739418005505E7 /* APIHandling */,
+				303102631F728254005505E7 /* AppDelegate */,
+				3031026C1F73AECA005505E7 /* DataModel */,
+				30ED79DB1F75329800B509D4 /* DetailViewConrrollers */,
+				3031025B1F7170C8005505E7 /* HomeController */,
+				30E5C2891F71700400CF5632 /* LoginController */,
+				3031025A1F7170B1005505E7 /* MainNavigationController */,
+				30E5C29F1F71701F00CF5632 /* NSUserDefaults */,
+				303102841F73BCF3005505E7 /* Reachability */,
+				30F7FC171F62F9BD0036D181 /* Supporting Files */,
+				303102831F73BCE1005505E7 /* Utils */,
+				30F7FC231F62F9BD0036D181 /* Assets.xcassets */,
+				30E5C2871F716E3500CF5632 /* GoogleService-Info.plist */,
+				30F7FC281F62F9BD0036D181 /* Info.plist */,
+				30F7FC251F62F9BD0036D181 /* LaunchScreen.storyboard */,
+				30F7FC201F62F9BD0036D181 /* Main.storyboard */,
+			);
+			name = HackerNews;
+			path = HackerNews;
+			sourceTree = "<group>";
+		};
+		30F7FC171F62F9BD0036D181 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				303102621F727B02005505E7 /* Constants.h */,
+				30F7FC181F62F9BD0036D181 /* main.m */,
+			);
+			name = "Supporting Files";
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BD343322A7AB659F1BFFAEAB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0A23317312EC2E105F7997ED /* Pods-UrbanPiper.debug.xcconfig */,
+				D61CF6F521EA781AD9A8B0B1 /* Pods-UrbanPiper.release.xcconfig */,
+				CF9B57D09A1B0A30E3B571DF /* Pods-UrbanPiperTests.debug.xcconfig */,
+				78BF6EB7AA81596C2C984DC1 /* Pods-UrbanPiperTests.release.xcconfig */,
+				7A054E46C2FDE5E6A6EE9835 /* Pods-UrbanPiperUITests.debug.xcconfig */,
+				80FCABD478BE3D116AC12F0C /* Pods-UrbanPiperUITests.release.xcconfig */,
+				9548881313FCDFC57A18C991 /* Pods-HackerNews.debug.xcconfig */,
+				5F02187DB12276EC42B832FA /* Pods-HackerNews.release.xcconfig */,
+				743BF0CAEE675546E14DF9C3 /* Pods-HackerNewsTests.debug.xcconfig */,
+				07E686BD139EC41A7148088A /* Pods-HackerNewsTests.release.xcconfig */,
+				410C2A09A6E7939B8E3573D4 /* Pods-HackerNewsUITests.debug.xcconfig */,
+				339221C3EBB3B522E2A09B7F /* Pods-HackerNewsUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		30F7FC131F62F9BD0036D181 /* HackerNews */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30F7FC411F62F9BD0036D181 /* Build configuration list for PBXNativeTarget "HackerNews" */;
+			buildPhases = (
+				108BFCD2A76B706AA7289E84 /* [CP] Check Pods Manifest.lock */,
+				30F7FC101F62F9BD0036D181 /* Sources */,
+				30F7FC111F62F9BD0036D181 /* Frameworks */,
+				30F7FC121F62F9BD0036D181 /* Resources */,
+				30F7FC4D1F62F9D00036D181 /* Embed Frameworks */,
+				19955CABD2B157D3B1C52FBB /* [CP] Embed Pods Frameworks */,
+				89363C83812C3A360DD323AF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HackerNews;
+			productName = UrbanPiper;
+			productReference = 30F7FC141F62F9BD0036D181 /* HackerNews.app */;
+			productType = "com.apple.product-type.application";
+		};
+		30F7FC2C1F62F9BD0036D181 /* HackerNewsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30F7FC441F62F9BD0036D181 /* Build configuration list for PBXNativeTarget "HackerNewsTests" */;
+			buildPhases = (
+				14F156EABF27E452705301E3 /* [CP] Check Pods Manifest.lock */,
+				30F7FC291F62F9BD0036D181 /* Sources */,
+				30F7FC2A1F62F9BD0036D181 /* Frameworks */,
+				30F7FC2B1F62F9BD0036D181 /* Resources */,
+				9FAE2DF817FAE21B241AEEE7 /* [CP] Embed Pods Frameworks */,
+				6DA85F74B3AC75893F8890AB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				30F7FC2F1F62F9BD0036D181 /* PBXTargetDependency */,
+			);
+			name = HackerNewsTests;
+			productName = UrbanPiperTests;
+			productReference = 30F7FC2D1F62F9BD0036D181 /* HackerNewsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		30F7FC371F62F9BD0036D181 /* HackerNewsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30F7FC471F62F9BD0036D181 /* Build configuration list for PBXNativeTarget "HackerNewsUITests" */;
+			buildPhases = (
+				202AF7B0EE01A9F9CB25D6BE /* [CP] Check Pods Manifest.lock */,
+				30F7FC341F62F9BD0036D181 /* Sources */,
+				30F7FC351F62F9BD0036D181 /* Frameworks */,
+				30F7FC361F62F9BD0036D181 /* Resources */,
+				CB2B86A413C18B0266BB5F07 /* [CP] Embed Pods Frameworks */,
+				2F1E69FDA906A343236BFE93 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				30F7FC3A1F62F9BD0036D181 /* PBXTargetDependency */,
+			);
+			name = HackerNewsUITests;
+			productName = UrbanPiperUITests;
+			productReference = 30F7FC381F62F9BD0036D181 /* HackerNewsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		30F7FC0C1F62F9BD0036D181 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "akshay bansal";
+				TargetAttributes = {
+					30F7FC131F62F9BD0036D181 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = MH3Z54P28V;
+						ProvisioningStyle = Automatic;
+					};
+					30F7FC2C1F62F9BD0036D181 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = MH3Z54P28V;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 30F7FC131F62F9BD0036D181;
+					};
+					30F7FC371F62F9BD0036D181 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = MH3Z54P28V;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 30F7FC131F62F9BD0036D181;
+					};
+				};
+			};
+			buildConfigurationList = 30F7FC0F1F62F9BD0036D181 /* Build configuration list for PBXProject "HackerNews" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 30F7FC0B1F62F9BD0036D181;
+			productRefGroup = 30F7FC151F62F9BD0036D181 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				30F7FC131F62F9BD0036D181 /* HackerNews */,
+				30F7FC2C1F62F9BD0036D181 /* HackerNewsTests */,
+				30F7FC371F62F9BD0036D181 /* HackerNewsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		30F7FC121F62F9BD0036D181 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30F7FC271F62F9BD0036D181 /* LaunchScreen.storyboard in Resources */,
+				30E5C2881F716E3500CF5632 /* GoogleService-Info.plist in Resources */,
+				30F7FC241F62F9BD0036D181 /* Assets.xcassets in Resources */,
+				30F7FC221F62F9BD0036D181 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30F7FC2B1F62F9BD0036D181 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30F7FC361F62F9BD0036D181 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		108BFCD2A76B706AA7289E84 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		14F156EABF27E452705301E3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		19955CABD2B157D3B1C52FBB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HackerNews/Pods-HackerNews-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		202AF7B0EE01A9F9CB25D6BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2F1E69FDA906A343236BFE93 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HackerNewsUITests/Pods-HackerNewsUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6DA85F74B3AC75893F8890AB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HackerNewsTests/Pods-HackerNewsTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89363C83812C3A360DD323AF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HackerNews/Pods-HackerNews-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FAE2DF817FAE21B241AEEE7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HackerNewsTests/Pods-HackerNewsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB2B86A413C18B0266BB5F07 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HackerNewsUITests/Pods-HackerNewsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		30F7FC101F62F9BD0036D181 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30E5C2981F71701100CF5632 /* CustomTextField.m in Sources */,
+				303102671F739391005505E7 /* HackerNewsCell.m in Sources */,
+				30F7FC1F1F62F9BD0036D181 /* MainViewController.m in Sources */,
+				30E5C2A51F71703A00CF5632 /* MainNavigationController.m in Sources */,
+				3031027E1F73BCCE005505E7 /* Reachability.m in Sources */,
+				30ED79EA1F757CF400B509D4 /* CommentsDownloader.m in Sources */,
+				3031026F1F73AEFC005505E7 /* Story.m in Sources */,
+				3031026A1F739403005505E7 /* NewsDownloader.m in Sources */,
+				30F7FC1C1F62F9BD0036D181 /* AppDelegate.m in Sources */,
+				30ED79E11F7532C300B509D4 /* CommentsViewController.m in Sources */,
+				303102721F73AF29005505E7 /* Comment.m in Sources */,
+				30ED79DE1F7532B100B509D4 /* DetailViewController.m in Sources */,
+				30E5C29B1F71701100CF5632 /* PageCell.m in Sources */,
+				30ED79E71F7535DE00B509D4 /* CommentViewCell.m in Sources */,
+				30E5C29A1F71701100CF5632 /* LoginCell.m in Sources */,
+				30F7FC191F62F9BD0036D181 /* main.m in Sources */,
+				3031027F1F73BCCE005505E7 /* ReachabilityManager.m in Sources */,
+				30ED79E41F7532D100B509D4 /* WebViewViewController.m in Sources */,
+				30E5C29C1F71701100CF5632 /* PageInfo.m in Sources */,
+				30E5C2A21F71702E00CF5632 /* NSUserDefaults+Helper.m in Sources */,
+				30E5C29D1F71701100CF5632 /* LoginController.m in Sources */,
+				303102821F73BCD7005505E7 /* IAUtils.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30F7FC291F62F9BD0036D181 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30F7FC341F62F9BD0036D181 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		30F7FC2F1F62F9BD0036D181 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 30F7FC131F62F9BD0036D181 /* HackerNews */;
+			targetProxy = 30F7FC2E1F62F9BD0036D181 /* PBXContainerItemProxy */;
+		};
+		30F7FC3A1F62F9BD0036D181 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 30F7FC131F62F9BD0036D181 /* HackerNews */;
+			targetProxy = 30F7FC391F62F9BD0036D181 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		30F7FC201F62F9BD0036D181 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30F7FC211F62F9BD0036D181 /* Base */,
+			);
+			name = Main.storyboard;
+			path = .;
+			sourceTree = "<group>";
+		};
+		30F7FC251F62F9BD0036D181 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30F7FC261F62F9BD0036D181 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = .;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		30F7FC3F1F62F9BD0036D181 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		30F7FC401F62F9BD0036D181 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		30F7FC421F62F9BD0036D181 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9548881313FCDFC57A18C991 /* Pods-HackerNews.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MH3Z54P28V;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = HackerNews/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = akshay.UrbanPiper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		30F7FC431F62F9BD0036D181 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F02187DB12276EC42B832FA /* Pods-HackerNews.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MH3Z54P28V;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = HackerNews/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = akshay.UrbanPiper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		30F7FC451F62F9BD0036D181 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 743BF0CAEE675546E14DF9C3 /* Pods-HackerNewsTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = MH3Z54P28V;
+				INFOPLIST_FILE = UrbanPiperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = akshay.UrbanPiperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HackerNews.app/HackerNews";
+			};
+			name = Debug;
+		};
+		30F7FC461F62F9BD0036D181 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07E686BD139EC41A7148088A /* Pods-HackerNewsTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = MH3Z54P28V;
+				INFOPLIST_FILE = UrbanPiperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = akshay.UrbanPiperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HackerNews.app/HackerNews";
+			};
+			name = Release;
+		};
+		30F7FC481F62F9BD0036D181 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 410C2A09A6E7939B8E3573D4 /* Pods-HackerNewsUITests.debug.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = MH3Z54P28V;
+				INFOPLIST_FILE = UrbanPiperUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = akshay.UrbanPiperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = UrbanPiper;
+			};
+			name = Debug;
+		};
+		30F7FC491F62F9BD0036D181 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 339221C3EBB3B522E2A09B7F /* Pods-HackerNewsUITests.release.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = MH3Z54P28V;
+				INFOPLIST_FILE = UrbanPiperUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = akshay.UrbanPiperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = UrbanPiper;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		30F7FC0F1F62F9BD0036D181 /* Build configuration list for PBXProject "HackerNews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30F7FC3F1F62F9BD0036D181 /* Debug */,
+				30F7FC401F62F9BD0036D181 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30F7FC411F62F9BD0036D181 /* Build configuration list for PBXNativeTarget "HackerNews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30F7FC421F62F9BD0036D181 /* Debug */,
+				30F7FC431F62F9BD0036D181 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30F7FC441F62F9BD0036D181 /* Build configuration list for PBXNativeTarget "HackerNewsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30F7FC451F62F9BD0036D181 /* Debug */,
+				30F7FC461F62F9BD0036D181 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30F7FC471F62F9BD0036D181 /* Build configuration list for PBXNativeTarget "HackerNewsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30F7FC481F62F9BD0036D181 /* Debug */,
+				30F7FC491F62F9BD0036D181 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 30F7FC0C1F62F9BD0036D181 /* Project object */;
+}
